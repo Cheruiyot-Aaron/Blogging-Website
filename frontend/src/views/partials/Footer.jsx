@@ -6,11 +6,11 @@ function Footer() {
             <div className="row bg-dark py-5 mx-0 card card-header  flex-row align-items-center text-center text-md-start">
                 <div className="col-md-5 mb-3 mb-md-0">
                     <div className="text-primary-hover text-white">
-                        2019 - 2024{" "}
+                        2024{" "}
                         <a href="https://youtube.com/@desphixs/" className="text-reset btn-link ms-2 me-2 " target="_blank">
                             Desphixs
                         </a>
-                        | All rights reserved
+                        | All rights Reserved
                     </div>
                 </div>
                 <div className="col-md-3 mb-3 mb-md-0">

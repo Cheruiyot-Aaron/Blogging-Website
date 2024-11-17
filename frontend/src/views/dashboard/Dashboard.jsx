@@ -56,23 +56,35 @@ function Dashboard() {
                                                 <i className="bi bi-people-fill" />
                                             </div>
                                             <div className="ms-3">
-                                                <h3>{stats.views}</h3>
+                                                <h3>{stats.Views}</h3>
                                                 <h6 className="mb-0">Total Views</h6>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-sm-6 col-lg-3">
-                                    <div className="card card-body border p-3">
-                                        <div className="d-flex align-items-center">
-                                            <div className="icon-xl fs-1 p-3 bg-primary bg-opacity-10 rounded-3 text-primary">
-                                                <i className="bi bi-file-earmark-text-fill" />
-                                            </div>
-                                            <div className="ms-3">
-                                                <h3>{stats.posts}</h3>
-                                                <h6 className="mb-0">Posts</h6>
-                                            </div>
+                                    <div 
+                                    className="card card-body border p-3" 
+                                    style={{ 
+                                        backgroundColor: '#17d4c4',
+                                        // boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', 
+                                        borderRadius: '20px',
+                                        borderColor: 'red',
+                                        borderWidth: '5px',
+                                        transition: 'transform 0.3s ease'
+                                    }}
+                                    onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.15)'}
+                                    onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                                    >
+                                    <div className="d-flex align-items-center">
+                                        <div className="icon-xl fs-1 p-3 bg-primary bg-opacity-10 rounded-3 text-primary">
+                                        <i className="bi bi-file-earmark-text-fill" />
                                         </div>
+                                        <div className="ms-3">
+                                        <h3>{stats.posts}</h3>
+                                        <h6 className="mb-0">Posts</h6>
+                                        </div>
+                                    </div>
                                     </div>
                                 </div>
                                 <div className="col-sm-6 col-lg-3">
@@ -261,7 +273,6 @@ function Dashboard() {
                                 </div>
                             </div>
                         </div>
-
                         <div className="col-12">
                             <div className="card border bg-transparent rounded-3">
                                 <div className="card-header bg-transparent border-bottom p-3">
@@ -274,6 +285,10 @@ function Dashboard() {
                                         </a>
                                     </div>
                                 </div>
+                                <br></br>
+                                <br></br>
+                                <br></br>
+                                <br></br>
                                 <div className="card-body">
                                     {/* Search and select END */}
                                     {/* Blog list table START */}

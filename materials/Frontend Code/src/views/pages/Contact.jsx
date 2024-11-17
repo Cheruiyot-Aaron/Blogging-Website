@@ -31,13 +31,13 @@ Contact info START */}
                                 tabIndex={0}
                             />
                             <div className="row mt-5">
-                                <div className="col-sm-6 mb-5 mb-sm-0">
+                                {/* <div className="col-sm-6 mb-5 mb-sm-0">
                                     <h3>Address Informations</h3>
-                                    <address>2492 Centennial NW, Acworth, GA, 30102</address>
+                                    <address>Westlands - Nairobi, Kenya</address>
                                     <p>
                                         Call:{" "}
                                         <a href="#" className="text-reset">
-                                            <u>+123 4567 890 (Toll-free)</u>
+                                            <u>+254 705 285 825</u>
                                         </a>
                                     </p>
                                     <p>
@@ -51,27 +51,27 @@ Contact info START */}
                                         <br />
                                         9:30 am to 6:00 pm
                                     </p>
-                                </div>
+                                </div> */}
                                 <div className="col-sm-6">
                                     <h3>Contact Information </h3>
                                     <p>Get in touch with us to see how we can help you with your query</p>
-                                    <address>750 Sing Sing Rd, Horseheads, NY, 14845</address>
+                                    <address>Westalnds - Nairobi Kenya</address>
                                     <p>
                                         Call:{" "}
                                         <a href="#" className="text-reset">
-                                            <u>+123 4567 890 (Toll-free)</u>
+                                            <u>+254 705 285 825</u>
                                         </a>
                                     </p>
                                     <p>
                                         Email:{" "}
                                         <a href="#" className="text-reset">
-                                            <u>desphixs@gmail.com</u>
+                                            <u>acheruiyot090@gmail.com</u>
                                         </a>
                                     </p>
                                     <p>
-                                        Support time: Monday to Saturday
+                                        Support time: Monday to Sunday
                                         <br />
-                                        9:00 am to 5:30 pm
+                                        9:00 am to 10:30 pm
                                     </p>
                                 </div>
                             </div>

@@ -158,26 +158,27 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'api.User'
 
 # Site URL
-SITE_URL=env("SITE_URL")
+# SITE_URL=env("SITE_URL")
+SITE_URL = env.str("SITE_URL", default="http://localhost:8000")
 
-# Stripe API Keys 
-STRIPE_PUBLIC_KEY = env("STRIPE_PUBLIC_KEY")
-STRIPE_SECRET_KEY = env("STRIPE_SECRET_KEY")
+# # Stripe API Keys 
+# STRIPE_PUBLIC_KEY = env("your_stripe_public_key")
+# STRIPE_SECRET_KEY = env("STRIPE_SECRET_KEY")
 
-# Paypal API Keys 
-PAYPAL_CLIENT_ID = env('PAYPAL_CLIENT_ID')
-PAYPAL_SECRET_ID = env('PAYPAL_SECRET_ID')
+# # Paypal API Keys 
+# PAYPAL_CLIENT_ID = env('PAYPAL_CLIENT_ID')
+# PAYPAL_SECRET_ID = env('PAYPAL_SECRET_ID')
 
-FLUTTERWAVE_PUBLIC_KEY=env("FLUTTERWAVE_PUBLIC_KEY")
-FLUTTERWAVE_PRIVATE_KEY=env("FLUTTERWAVE_PRIVATE_KEY")
-FLUTTERWAVE_PRIVATE_KEY_LIVE=env("FLUTTERWAVE_PRIVATE_KEY_LIVE")
-FLUTTERWAVE_ENCRYPTION_KEY=env("FLUTTERWAVE_ENCRYPTION_KEY")
+# FLUTTERWAVE_PUBLIC_KEY=env("FLUTTERWAVE_PUBLIC_KEY")
+# FLUTTERWAVE_PRIVATE_KEY=env("FLUTTERWAVE_PRIVATE_KEY")
+# FLUTTERWAVE_PRIVATE_KEY_LIVE=env("FLUTTERWAVE_PRIVATE_KEY_LIVE")
+# FLUTTERWAVE_ENCRYPTION_KEY=env("FLUTTERWAVE_ENCRYPTION_KEY")
 
-RAVE_PUBLIC_KEY=env("RAVE_PUBLIC_KEY")
-RAVE_SECRET_KEY=env("RAVE_SECRET_KEY")
+# RAVE_PUBLIC_KEY=env("RAVE_PUBLIC_KEY")
+# RAVE_SECRET_KEY=env("RAVE_SECRET_KEY")
 
-PAYSTACK_PUBLIC_KEY=env("PAYSTACK_PUBLIC_KEY")
-PAYSTACK_PRIVATE_KEY=env("PAYSTACK_PRIVATE_KEY")
+# PAYSTACK_PUBLIC_KEY=env("PAYSTACK_PUBLIC_KEY")
+# PAYSTACK_PRIVATE_KEY=env("PAYSTACK_PRIVATE_KEY")
 
 
 REST_FRAMEWORK = {
@@ -192,10 +193,10 @@ ANYMAIL = {
 
 
 
-FROM_EMAIL=env("FROM_EMAIL")
-EMAIL_BACKEND=env("EMAIL_BACKEND")
-DEFAULT_FROM_EMAIL=env("DEFAULT_FROM_EMAIL")
-SERVER_EMAIL=env("SERVER_EMAIL")
+# FROM_EMAIL=env("FROM_EMAIL")
+# EMAIL_BACKEND=env("EMAIL_BACKEND")
+# DEFAULT_FROM_EMAIL=env("DEFAULT_FROM_EMAIL")
+# SERVER_EMAIL=env("SERVER_EMAIL")
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
@@ -238,12 +239,12 @@ CORS_ALLOW_ALL_ORIGINS = True
 JAZZMIN_SETTINGS = {
     "site_title": "Desphixs",
     "site_header": "Desphixs",
-    "site_brand": "Modern Marketplace ",
+    "site_brand": "Modern Blog Site ",
     # "site_icon": "images/favicon.ico",
-    # "site_logo": "images/logos/logo.jpg",
-    "welcome_sign": "Welcome To Desphixs",
-    "copyright": "Desphixs",
-    "user_avatar": "images/photos/logo.jpg",
+    "site_logo": "images/logos/companylogo.jpg",
+    "welcome_sign": "Modern Blog Site",
+    "copyright": "Acheruiyot",
+    #"user_avatar": "images/photos/logo1.jpg",
     "topmenu_links": [
         {"name": "Dashboard", "url": "home", "permissions": ["auth.view_user"]},
         {"model": "auth.User"},
@@ -279,7 +280,7 @@ JAZZMIN_SETTINGS = {
     "related_modal_active": False,
     
     "custom_js": None,
-    "show_ui_builder": True,
+    "show_ui_builder": False,
     
     "changeform_format": "horizontal_tabs",
     "changeform_format_overrides": {

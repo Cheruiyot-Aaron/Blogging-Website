@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect  } from "react";
 import Header from "../partials/Header";
 import Footer from "../partials/Footer";
 import { useParams, Link, useNavigate } from "react-router-dom";
@@ -20,6 +20,8 @@ function Login() {
         });
     };
 
+
+    
     const resetForm = () => {
         setBioData({
             email: "",
